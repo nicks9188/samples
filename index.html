@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <style>
+            
+            .column-left {
+				float: left;
+				width: 30%;
+                height: 60px;
+				padding: 5px;
+                /*background-color: mediumblue;*/
+                border-bottom: 1px solid grey;
+			}
+            .column-right {
+				float: left;
+				width: 67%;
+                height: 60px;
+				padding: 5px;
+                /*background-color: turquoise;*/
+                border-bottom: 1px solid grey;
+			}
+            /* Clearfix (clear floats) */
+			.row::after {
+			content: "";
+			clear: both;
+			display: table;
+			}
+            p {
+                margin: 20px;
+                width: 100%;
+                color: cornflowerblue;
+            /*    font-weight: bold;*/
+                font-size: 18px;
+            }
+            input[type=text], select, textarea {
+                border: none;
+                width: 95%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                resize: vertical;
+                margin: -5px 0px 0px 10px;
+                height: 40px;
+            }
+            input[type=submit] {
+                background-color: #0e76a8;
+                color: whitesmoke;
+                padding: 20px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 30%;
+                margin-top: 10px;
+                font-size: 20px;
+            }
+            .radio {
+                font-size: 25px;
+            }
+            .radio input {
+            position: absolute;
+            opacity: 0;
+            }
+            .radio label {
+            display: inline-block;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            }
+            .radio :checked + label {
+            border-bottom: solid 1px #bbb;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+            background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:50%">
+                <div>
+                    <img src="Img/footer.jfif" alt="Header" style="width:100%">
+                </div>
+                <hr>
+                <form class="aui">
+                    <div class="row">
+                        <div class="column-left">
+                          <p>Your Name</p>
+                        </div>
+                        <div class="column-right">
+                            <p>
+                                <div class="text-inputs">
+                                    <input type="text" id="username" name="username">
+                                </div>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="row" style="background-color:#ECF0F1;">
+                        <div class="column-left">
+                          <p>User ID</p>
+                        </div>
+                        <div class="column-right">
+                            <p>
+                                <div class="text-inputs">
+                                    <input type="text" id="userid" name="userid">
+                                </div>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="column-left">
+                          <p>Engagement Code</p>
+                        </div>
+                        <div class="column-right">
+                            <p>
+                                <div class="text-inputs">
+                                    <input type="text" id="engagementcode" name="engagementcode">
+                                </div>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="row" style="background-color:#ECF0F1;">
+                        <div class="column-left">
+                          <p>Service Name</p>
+                        </div>
+                        <div class="column-right">
+                            <p><div class="text-inputs">
+                                <input type="text" id="servicename" name="servicename">
+                                </div>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="column-left">
+                          <p>Rating</p>
+                        </div>
+                        <div class="column-right radio">
+                          <input class="radio" type="radio" checked="checked"
+                                name="radiobuttons" id="radioButtonOne">
+                         <label for="radioButtonOne">😄</label>
+                         <input class="radio" type="radio"
+                                name="radiobuttons" id="radioButtonTwo">
+                         <label for="radioButtonTwo">😊</label>
+                         <input class="radio" type="radio"
+                                name="radiobuttons" id="radioButtonThree">
+                         <label for="radioButtonThree">😐</label>
+                         <input class="radio" type="radio"
+                                name="radiobuttons" id="radioButtonFour">
+                         <label for="radioButtonFour">😖</label>
+                         <input class="radio" type="radio"
+                                name="radiobuttons" id="radioButtonFive">
+                         <label for="radioButtonFive">😡</label>
+                        </div>
+                  </div>
+                  <div class="row" style="background-color:#ECF0F1;">
+                        <div class="column-left">
+                          <p>User Comment for Service</p>
+                        </div>
+                        <div class="column-right">
+                            <p>
+                                <div class="text-inputs">
+                                    <input type="text" id="comment" name="comment">
+                                </div>
+                            </p>
+                        </div>
+                  </div>
+                  <div class="row">
+                      <div class="column-right" style="
+                      height: 115px;
+                      margin: auto;
+                      width: 82%;
+                  "><div class="text-inputs">
+                        <textarea id="feedback" name="feedback" rows="4" cols="70" style="margin-top: 7px;
+                        margin-bottom: 5px;
+                        height: 100px;
+                        width:97%;
+                        "></textarea>
+                    </div>  
+                      </div>
+                      <div class="column-left" style="
+                      height: 115px;
+                      margin: auto;
+                      width: 15%;
+                  "><img src="Img/gif-1.gif" style="height: 120px;width: 125px;"></div>
+                  </div>
+                  <div align="center">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+                <hr>
+                <div>
+                    <img src="Img/No-Branding-Header-Background-1.jpg" alt="Header" style="width:100%">
+                </div>
+        </div>
+    </body>
+</html>
